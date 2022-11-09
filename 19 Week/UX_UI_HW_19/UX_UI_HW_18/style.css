@@ -1,0 +1,128 @@
+body {
+    background-color: #F9F9F9;
+    font-family: 'Hammersmith One', sans-serif;
+    }
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+}
+
+.nav {
+    background-color: silver;
+    text-align: center;
+    color: black;
+}
+    .nav ul{
+        padding: 0;
+        display: inline-block;
+        margin: 0;
+    }
+    .nav li {
+        padding: 2px 60px;
+        float: left;
+    }
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: black;
+    text-align:center;
+    color: white;
+}
+    .footer ul {
+        padding: 0;
+        display: inline-block;
+        margin: 0;
+    }
+    .footer li {
+        padding: 2px 60px;
+        float: left;
+        border: .5px solid white
+    }
+    li {
+        list-style-position:inside;
+    }
+    .flexContainer {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: rgb(105, 49, 119);
+    }
+div1 {
+    background-color: #da920c;
+  width: 33%;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 0;
+}
+div2 {
+    background-color: #d63810;
+  width: 33%;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding:0;
+}
+
+div3 {
+    background-color: #f6f876;
+  width: 33%;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  padding: 0;
+}
+
+<!-- My Work Section Constructed using CSS Grid-->
+
+.item1 {
+    grid-area: menu;
+}
+
+.item2 {
+    grid-area: left;
+}
+
+.item3 {
+    grid-area: right;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-areas: menu left left right;
+    gap: 10px;
+    background-color: #a01c83;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    flex-direction: column;
+    width: 100%;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1flr;
+    grid-template-areas: 
+        "main"
+        "left"
+        "right"
+    ;
+    }

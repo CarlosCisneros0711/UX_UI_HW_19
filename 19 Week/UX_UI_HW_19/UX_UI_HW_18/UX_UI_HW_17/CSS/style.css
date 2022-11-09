@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: rgb(44, 43, 100);
+    padding: 15px;
+}
+header li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+header ul {
+    float: right;
+    color: white;
+}
+header p {
+    display: inline-block;
+}
+.heroImg {
+    background-color: #eb974a;
+    padding: 100px 15px;
+  }
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #e2dada;
+    text-align: center;
+  }
+  button {
+    padding: 15px;
+    background-color: rgb(13, 12, 58);
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  footer {
+    background-color: rgb(13, 12, 58);
+    padding: 5px;
+    color: white;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+    text-align: center;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+  }
+  .heading {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    background-color: rgb(13, 12, 58);
+    color: white
+  }
+  /* My UX Skills Section */
+  .flexContainer {
+    display: flex;
+    padding: 60px 30px;
+    background-color: rgb(13, 12, 58);
+    color: white;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+    background-color: #eb974a;
+    color: black;
+  }
+  
+  /* My Work Section */
+  .myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    background-color: #eb974a;
+    color: black;
+    font-size:  25px;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+    "img1 content1"
+    "img2 content2"
+    "img3 content3"
+    ;
+  }
+  .workGrid img {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+    padding: 25px;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 10px;
+  }
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+  .content3 {
+    grid-area: content3;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .header {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+    .img  {
+      width:100%;
+      height:auto;
+    }
+    body {
+      margin: 0;
+      font-size: small;
+  }
+    .workGrid {
+      display: column;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 900px 900px 900px;
+      grid-template-areas:
+      "img1 content1"
+      "img2 content2"
+      "img3 content3"
+      ;
+      font-size: 20px;
+}
+    .workGrid img {
+  width: 100%;
+  max-width: 500px;
+  margin: 1px;
+  display: column;
+  padding: 5px;
+}
+    .mySkills {
+      display: column;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 900px 900px 900px;
+      grid-template-areas: 
+      ;
+    }
+}
